@@ -19,19 +19,17 @@ function App() {
   {/* grid */}
 <br/>
 <br/>
-  <Grid
-  
-         h="200"
-         w="100%"
-        templateRows="repeat(6, 1fr)"
-        templateColumns="repeat(3, 1fr)"
-     
-        direction={["column","row"]}
-      >
-        <GridItem rowSpan={[3]} colSpan={[1]} bg="mediumorchid" />
-        <GridItem rowSpan={[6]} colSpan={[2]} bg="tomato" />
-        <GridItem rowSpan={[3]} colSpan={[1]} bg="lightskyblue" />
-      </Grid>
+  <Grid 
+  h="200px"
+  templateRows="repeat(9,1fr)"
+  templateColumns="repeat(5,1fr)"
+  gap={4}
+  >
+    <GridItem rowSpan={[3,6]} colSpan={[5,3]} bg="tomato" w="100%">1</GridItem>
+    <GridItem rowSpan={[3,12]} colSpan={[5,2]} bg="tomato" w="100%">2</GridItem>
+    <GridItem rowSpan={[3,6]} colSpan={[5,3]} bg="tomato" w="100%">3</GridItem>
+  </Grid>
+ 
      
 
      
